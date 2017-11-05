@@ -1,0 +1,54 @@
+{
+  "name": "express-api-boilerplate",
+  "version": "0.1.0",
+  "description": "🍽 Boilerplate for a RESTful Express API.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukita/express-api-boilerplate.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "boilerplate"
+  ],
+  "author": "Bruno Ukita <brunoukita@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ukita/express-api-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ukita/express-api-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "mongoose": "^4.13.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mongodb-memory-server": "^1.6.1",
+    "nodemon": "^1.12.1",
+    "request": "^2.83.0",
+    "supertest": "^3.0.0"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js",
+      "!test/setup.js"
+    ],
+    "failFast": true,
+    "color": true,
+    "verbose": true
+  }
+}
